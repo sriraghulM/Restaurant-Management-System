@@ -33,7 +33,7 @@ This is the backend service for the **Restaurant Management System**, providing 
 - MongoDB installed and running
 - A `.env` file with the following variables:
 
-```plaintext
+````bash
 ACCESS_TOKEN_SECRET=your_jwt_secret
 MONGO_URI=your_mongodb_connection_string
 PORT=3000
@@ -60,31 +60,31 @@ npm install
 # API Endpoints
 
 ## Authentication
-- **POST** `/api/auth/register`  
+- **POST** `/api/auth/register`
   Register a new user.
 
-- **POST** `/api/auth/login`  
+- **POST** `/api/auth/login`
   Authenticate a user and return a JWT token.
 
 ---
 
 ## User Management
-- **PUT** `/api/users/:userId`  
+- **PUT** `/api/users/:userId`
   Update a user's role (Admin/Manager-only).
 
 ---
 
 ## Food Management
-- **POST** `/api/food`  
+- **POST** `/api/food`
   Add a new food item (Admin/Manager-only).
 
-- **DELETE** `/api/food/:id`  
+- **DELETE** `/api/food/:id`
   Delete a food item (Admin/Manager-only).
 
 ---
 
 ## Table Reservations
-- **GET** `/api/table`  
+- **GET** `/api/table`
   Retrieve all reservations.
 
 ---
@@ -103,6 +103,7 @@ npm install
 ## Swagger API Documentation
 
 1. Start the server.
-2. Open your browser and navigate to:  
+2. Open your browser and navigate to:
    ```bash
    http://localhost:3000/api-docs
+````
